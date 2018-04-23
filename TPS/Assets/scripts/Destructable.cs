@@ -36,6 +36,7 @@ public class Destructable : MonoBehaviour {
         if(OnDeath != null)
         {
             OnDeath();
+       
         }
     }
 
@@ -51,6 +52,7 @@ public class Destructable : MonoBehaviour {
         if(HitPointsRemaining <= 0)
         {
             Die();
+            Destroy(gameObject);
         }
     }
 

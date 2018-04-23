@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
     [SerializeField] float runSpeed;
     [SerializeField] float walkSpeed;
     [SerializeField] float crouchSpeed;
+    [SerializeField] float sprintSpeed;
     [SerializeField] MouseInput MouseControl;
 
     private MoveController m_MoveController;
@@ -72,12 +73,14 @@ public class Player : MonoBehaviour {
         {
             moveSpeed = crouchSpeed;
         }
-        if (playerInput.isRunning)
+        if (playerInput.isSprinting)
         {
-            moveSpeed = walkSpeed;
+            moveSpeed = sprintSpeed;
             Debug.Log(moveSpeed);
         }
-        Vector2 direction = new Vector2(playerInput.Vertical * moveSpeed, playerInput.Horizontal * moveSpeed);
-        MoveController.Move(direction);
+     
+            Vector2 direction = new Vector2(playerInput.Vertical * moveSpeed, playerInput.Horizontal * moveSpeed);
+            MoveController.Move(direction);
+   
     }
 }

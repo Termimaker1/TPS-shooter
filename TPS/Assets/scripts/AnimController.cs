@@ -21,5 +21,6 @@ public class AnimController : MonoBehaviour {
 
         playerAnim.SetBool("crouch", GameManager.Instance.InputController.isCrouched);
         playerAnim.SetBool("walk", GameManager.Instance.InputController.isWalking);
+        playerAnim.SetBool("isSprinting", GameManager.Instance.InputController.isSprinting);
     }
 }

@@ -6,7 +6,11 @@ public class AssualtRifle : Shooter {
 
     public override void Fire()
     {
-        base.Fire(); // execute the void
+        if (GameManager.Instance.InputController.isSprinting == false)
+        {
+          base.Fire(); // execute the void
+        }
+        
 
         if (canShoot)
         {

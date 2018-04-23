@@ -25,7 +25,7 @@ public class Shooter : MonoBehaviour {
        
         canShoot = false;
 
-        if (Time.time < nextFireAllowed)
+        if (Time.time < nextFireAllowed && GameManager.Instance.InputController.isSprinting == false)
         {
             return;
         }
