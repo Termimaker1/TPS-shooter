@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shooter : MonoBehaviour {
     [SerializeField]float rateOfFire;
     [SerializeField] Transform projectile;
+    [SerializeField] Transform hands;
     private float nextFireAllowed;
     public bool canShoot;
     

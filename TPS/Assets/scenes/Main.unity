@@ -23,7 +23,6 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientMode: 4
   m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
@@ -399,8 +398,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 25
   walkSpeed: 6
-  crouchSpeed: 10
-  sprintSpeed: 35
+  crouchSpeed: 15
+  sprintSpeed: 45
   MouseControl:
     Damping: {x: 5, y: 5}
     Sensistivity: {x: 2, y: 2}
@@ -562,7 +561,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69d6ff3355d10d14981cf88f716738c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aimTarget: {fileID: 0}
 --- !u!1 &456024808
 GameObject:
   m_ObjectHideFlags: 0
@@ -923,6 +921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rateOfFire: 0.15
   projectile: {fileID: 4784196722210152, guid: dd2627d467dff8245a4a9293ce2d300d, type: 2}
+  hands: {fileID: 0}
   canShoot: 0
   muzzle: {fileID: 0}
 --- !u!1 &1175677425
